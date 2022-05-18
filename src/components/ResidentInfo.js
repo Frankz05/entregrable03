@@ -8,7 +8,7 @@ const ResidentInfo = ({url}) => {
     useEffect(()=>{
         axios.get(url)
             .then(res => setResident(res.data))
-    },[])
+    },[url])
 
 
     return ( 
