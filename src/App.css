@@ -208,6 +208,7 @@ button{
   .imgCard{
     width: 16rem;
     margin:auto;
+    display: flex;
   }
 
   .imgHeader img{

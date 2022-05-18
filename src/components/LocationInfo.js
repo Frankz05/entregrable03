@@ -8,7 +8,7 @@ const LocationInfo = ({location}) => {
                 <p><b>Population: </b>{location.residents?.length}</p>
             </div>
         </div>
-     );
+    );
 }
  
 export default LocationInfo;
