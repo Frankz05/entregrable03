@@ -1,38 +1,301 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
+  width: 100vw;
+  background: #084851;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+  background:#062226;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.residentList{
+  list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.locationBox{
+  align-items: center;
+}
+.locationInfo{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 12vw;
+}
+
+.card{
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.imgCard{
+  width: 9rem;
+  border-radius: 1rem;
+  margin:1rem 0 0 0;
+}
+
+.imgHeader img{
+  width: 100%;
+}
+h1{
+  margin: 1.5rem;
+}
+h2{
+  margin: 3rem 0 1.5rem 0;
+}
+.location{
+  margin-bottom: 2rem;
+}
+h3{
+  border-bottom: 2px solid black;
+  margin: .5rem 0;
+  padding-bottom: .5rem;
+  margin-left: 2rem;
+  text-align: center;
+  
+}
+b{
+  color: gray;
+}
+p{
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+}
+input{
+  width: 65vw;
+  padding: .4rem 0;
+  background-color: #062226;
+  border-style: none;
+  color: white;
+  outline: none;
+  text-align: center;
+}
+button{
+  width: 15vw;
+  padding: .4rem 0;
+  background-color: #062226;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.grayColor{
+  color: gray
+}
+ 
+@media screen and ( min-width: 600px){
+  .residentList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationInfo{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 35vw;
+  }
+  
+  .card{
+    margin: 1rem;
+    width: 80vw;
+  }
+  .imgHeader img{
+    width: 100%;
+  }
+  h2{
+    margin: 2rem 0 1.5rem 0;
+  }
+  button{
+    width: 14vw;
+    padding: .4rem 0;
+    background-color: #062226;
+    color: white;
+  }
+}
+@media screen and ( min-width: 768px){
+  .residentList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationInfo{
+    width: max-content;
+  }
+  h3{
+    margin: 1.5rem 0;
+  }
+  .card{
+    margin: 1rem;
+    width: 80vw;
+  }
+  .imgCard{
+    width: 15rem;
+    border-radius: 1rem;
+    margin-right: 3.5rem;
+  }
+} 
+@media screen and ( min-width: 992px){
+  .residentList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationInfo{
+    width: max-content;
+  }
+  h3{
+    margin: 2.5rem 0;
+  }
+  .card{
+    margin: 1rem;
+    width: 70vw;
+  }
+  .imgCard{
+    width: 20rem;
+    border-radius: 1rem;
+    margin-right: 3.5rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and ( min-width: 1200px){
+  .App {
+    text-align: center;
+    width: 100vw;
+    background: #084851;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
   }
-  to {
-    transform: rotate(360deg);
+  .residentList{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .locationBox{
+    align-items: center;
+  }
+  .locationInfo{
+    width: 63vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 18vw;
+  }
+
+  .card{
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 45vw;
+    display: flex;
+    text-align: left;
+  }
+  .imgCard{
+    width: 16rem;
+    margin:auto;
+  }
+
+  .imgHeader img{
+    width: 100%;
+  }
+  h1{
+    margin: 1rem;
+  }
+  h2{
+    margin: 3rem 0 1.5rem 0;
+  }
+  .location{
+    margin-bottom: 2rem;
+  }
+  h3{
+    border-bottom: 2px solid black;
+    margin: 1.5rem 0;
+    padding-bottom: .5rem;
+    margin-left: 2rem;
+    text-align: center;
+    
+  }
+  b{
+    color: gray;
+  }
+  p{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+  }
+  input{
+    width: 56vw;
+    padding: .4rem 0;
+    background-color: #062226;
+    border-style: none;
+    color: white;
+    outline: none;
+    text-align: center;
+  }
+  button{
+    width: 8vw;
+    padding: .4rem 0;
+    background-color: #062226;
+    color: white;
+  }
+  .grayColor{
+    color: gray
+  }
+}
+
+@media screen and ( min-width: 1300px){
+
+  .locationInfo{
+    width: 65vw;
+  }
+
+  .card{
+    width: 45vw;
+  }
+  .imgCard{
+    width: 15rem;
+    margin-right: 1.5rem;
+  }
+  h1{
+    margin: 2.5rem;
+  }
+  .location{
+    margin-bottom: 2rem;
+  }
+  p{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+  }
+  input{
+    width: 70vw;
+  }
+  button{
+    width: 12vw;
+  }
+}
+@media screen and ( min-width: 1400px){
+  .card{
+    width: 45vw;
+  }
+  .imgCard{
+    width: 15rem;
+    margin-right: 1.5rem;
+  }
+  h1{
+    margin: 3.5rem;
   }
 }
